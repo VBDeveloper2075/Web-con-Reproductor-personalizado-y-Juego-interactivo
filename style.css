@@ -1,0 +1,311 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    }
+    .body{
+    margin: 0px;
+    background-color: #427E80;
+    color: #F0F5E4;
+    }
+    .body-night{
+    margin: 0px;
+    background-color: #F0F5E4;
+    color: #427E80;
+    }
+    p{
+    color: black;
+    }
+    
+    
+    /* ---------- navegador ------------*/
+    
+    nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    
+    }
+    .tema{
+    display: none;
+    }
+    .tema-block{
+    display: block;
+    }
+    .menu{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    }
+    main{
+    padding: 100px 20px;
+    }
+    .item-menu{
+    list-style-type: none;
+    
+    }
+    .item-link, .botonesVideo{
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #F0F5E4;
+    color:#154454 ;
+    font-weight: 300;
+    }
+    .item-menu:active{
+    transform: translate(3px, 2px);
+    }
+    .item-menu:active > .item-link{
+    box-shadow:0px 0px ;
+    }
+    
+    .flexItem{
+    display: block;
+    }
+    
+    /*----- logo ------*/
+    rect#mon1, polygon#tec1{
+    animation: part_1 ease-in 5s ;
+    animation-iteration-count:1 ;
+    }
+    
+    rect#mon2,polygon#tec2 {
+    animation: part_2 ease-in 5s ;
+    animation-iteration-count:1 ;
+    }
+    @keyframes part_1{
+    0% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    20% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    30% {
+    transform: translate(0,0);
+    opacity:1;}
+    90% {
+    transform: translate(0,0);
+    opacity:1;}
+    
+    100% {
+    transform: translate(0,0);
+    opacity:1;}
+    }
+    
+    
+    @keyframes part_2 {
+    0% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    30% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    40% {
+    transform: translate(0,0);
+    opacity:1;}
+    90% {
+    transform: translate(0,0);
+    opacity:1;}
+    
+    100% {
+    transform:translate(0,0);
+    opacity:1;}
+    }
+    /* ---------- hoja index ------------*/
+    
+    
+    header{
+    background: url(./assets/imagenes/codigo.jpeg) 50% 0 fixed ;
+    background-size: cover;
+    min-height: 500px;
+    color: #eeeeee;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+    
+    }
+    h1{
+    background-color: #2D2D2D;
+    text-shadow: 4px 4px black;
+    }
+    h2{
+    text-shadow: 2px 2px #154454;
+    font-size:40px ;
+    text-align: center;
+    }
+    .titulo-blanco{
+    text-align: center;
+    }
+    
+    .cont-padre{
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    }
+    
+    .card{
+    width: 350px;
+    height: 400px;
+    border: 5px solid #154454;
+    background-color: #F0F5E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .desc-card{
+    width: 90%;
+    text-align: center;
+    height: 30px;
+    }
+    
+    .img-card{
+    width: 100%;
+    
+    }
+    
+    .boton-ver{
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: #427E80;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px #154454;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-bottom: 20px;
+    }
+    
+    .boton-ver:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+    }
+    
+    /* ------- footer -------*/
+    
+    footer{
+    background-color: #1d1d1d;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    color: white;
+    }
+    
+    .footer-left{
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+    height: 60px;
+    
+    }
+    
+    .titulo-foot{
+    font-size: 14px;
+    }
+    
+    .cont-historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .card-hist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:80px 50px;
+    gap: 20px;
+    background-color: linear-gradient(10% #F0F5E4,#154454 100%);
+    
+    }
+    .text-hist{
+    width: 45%;
+    }
+    
+    /* ---------- video ---------*/
+    .contenedorVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    
+    }
+    .barra{
+    background-color: #1d1d1d;
+    
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    }
+    .botonera{
+    display: flex;
+    gap: 20px;
+    }
+    .container{
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+    }
+    
+    #play,#pause{
+    width: 80px;
+    }
+    
+    
+    .botonesVideo:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+    }
+    #showTime{
+    padding-top: 28px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+    }
+   
+    /* ---------- ponerAPrueba ------------*/
+    .juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .cajas{
+    display: flex;
+    flex-direction: row;
+    }
+    #cajasoltar,#cajasoltar2,#cajasoltar3{
+    width: 275px;
+    height: 400px;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    
+    }
+    
+    #cajaimagenes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+    }
+    #imagen1,#imagen2,#imagen3{
+    width: 275px;
+    height: 400px;
+    }
+    .reinicio{
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    }
+    
